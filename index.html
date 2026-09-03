@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FF-16 Web | Interactive static pattern discovery in binary files</title>
+    </head>
+    <body style="margin: 0px;padding: 0px; overflow-y: hidden">
+        <div id="fileSelector">
+            <div style="position: absolute; left: 50%; top: 10%; transform: translate(-50%, -50%)">
+                <center>
+                    <h1>FF-16 Web</h1>
+                    <p>Web-based interactive static pattern discovery tool to locate structures from frequent patterns</p>
+                </center>
+            </div>
+            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">
+                <center>
+                    <input type="file" onchange="handleFileSelection(this.files);" /><br/><br/>
+                    FF-16 Web can open files between 256 bytes and 4 MB in size.
+                </center>
+            </div>
+            
+            <div style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%)">
+                <center>
+                    <small>Copyright (c) 2026 Attila Suszter. <a href="https://github.com/HexLasso/FF-16-Web/blob/main/LICENSE" target="_blank">MIT License</a>. Hosted on <a href="https://github.com/HexLasso/FF-16-Web" target="_blank">GitHub</a>. | Last updated: 3/Sep/2026</small>
+                </center>
+            </div>
+        </div>
+            <div id="dump" style="display: none; font-family:monospace; text-align:center">
+                <fieldset style="display:inline-block; width:fit-content;">
+                    <legend style="text-align:right;">←→ ↑↓ PgUp PgDn Home End</legend>
+                <div id="hexDumpPanel" style="white-space: pre;"/>
+                </fieldset>    
+                <fieldset style="display:inline-block; width:fit-content;">
+                    <legend style="text-align:left;">0-9 Highlight</legend>
+                <div id="patternsPanel" style="white-space: pre;"/>
+                </fieldset>    
+            </div>
+        </table>
+        <script type="text/javascript" src="index.js">
+        </script>
+    </body>
+</html>
