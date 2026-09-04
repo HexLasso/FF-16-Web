@@ -6,7 +6,7 @@ FF-16-Web is an interactive static pattern discovery tool running in a web brows
 
 ## Web User Interface
 
-
+<img width="700" height="632" alt="image" src="https://github.com/user-attachments/assets/9f12989c-1eb6-4ac0-9aee-5c28dce04723" />
 
 ## Keyboard shortcuts
 
