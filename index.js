@@ -261,7 +261,13 @@ function Update() {
     for (let i = 0; i < kTopN; i++) {
         let printable = '|' + toPrintable(blockFreqTable.get(topKeys[i])?.First, blockFreqTable.get(topKeys[i])?.Second) + '|';
 
-        let patternLine = i + " " + topKeys[i].padEnd(15) + " " + printable.padStart(4) + " " + topHits[i].toString().padStart(4)
+        let pattern = topKeys[i];
+
+        if (blockFreqTable.get(topKeys[i]).Gap == 0) {
+           pattern = blockFreqTable.get(topKeys[i]).First.toString(16).padStart(2, '0') + " " + blockFreqTable.get(topKeys[i]).Second.toString(16).padStart(2, '0');
+        }
+
+        let patternLine = i + " " + pattern.padEnd(15) + " " + printable.padStart(4) + " " + topHits[i].toString().padStart(4)
         if (gHighlightId == i) {
             kPatternsDump.innerHTML += "<mark>"  + patternLine + "</mark><br/>";
         } else {
