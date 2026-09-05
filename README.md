@@ -1,6 +1,6 @@
 # FF-16-Web (Find Frequent 16-bit for Web browser)
 
-## What does FF-16-TUI do?
+## What does FF-16-Web do?
 
 FF-16-Web is an interactive static pattern discovery tool running in a web browser that finds frequently occurring local 16-bit patterns across the entire file. It can help to locate structures from frequent patterns and understand file layout.
 
